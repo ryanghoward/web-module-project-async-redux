@@ -1,38 +1,38 @@
 .App {
   text-align: center;
+  font-family: "Cosmic Sans MS", "Comic Sans", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  margin-left: 1.5%;
+  margin-bottom: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.activities {
+  position: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 20px;
+  margin: 0 25%;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  margin-top: 4em;
+  font-size: 1.5em;
+  border-radius: 5em;
+  border-color: #fff;
+  background-color: red;
+  color: azure;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: green;
 }
