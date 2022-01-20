@@ -15,3 +15,18 @@ export const fetchSuccess = (activities) => {
 export const fetchFail = (error) => {
   return { type: FETCH_FAIL, payload: error };
 };
+
+export const fetchActivity = () => (dispatch) => {
+  dispatch({ type: fetchStart() });
+
+  axios
+    .get(`http://www.boredapi.com/api/activity/`)
+    .then((res) => {
+      // console.log(res);
+      const activities = res.data;
+      dispatch(fetchSuccess(activities));
+    })
+    .catch((error) => {
+      dispatch(fetchFail(error));
+    });
+};
