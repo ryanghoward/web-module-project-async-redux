@@ -1,4 +1,9 @@
-import { FETCH_FAIL, FETCH_START, FETCH_SUCCESS } from "../actions/actions";
+import {
+  FETCH_FAIL,
+  FETCH_START,
+  FETCH_SUCCESS,
+  fetchActivity,
+} from "../actions/actions";
 
 const initState = {
   activity: "",

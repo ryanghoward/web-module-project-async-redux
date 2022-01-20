@@ -20,7 +20,7 @@ export const fetchActivity = () => (dispatch) => {
   dispatch({ type: fetchStart() });
 
   axios
-    .get(`http://www.boredapi.com/api/activity/`)
+    .get("http://www.boredapi.com/api/activity/")
     .then((res) => {
       // console.log(res);
       const activities = res.data;
